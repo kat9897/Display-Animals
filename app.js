@@ -6,6 +6,8 @@ const background = <img
   className="background" 
   alt="ocean" 
   src="/images/ocean.jpg"/>;
+  
+const showBackground = true;
 
 const title = '';
 
@@ -34,7 +36,7 @@ function displayFact(e) {
 const animalFacts = (
   <div>
     <h1>{title === '' ? 'Click an animal for a fun fact' : title}</h1>
-    {background}
+    {showBackground && background}
     <p id="fact"></p>
     <div className="animals">
       {images}
